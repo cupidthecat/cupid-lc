@@ -9,6 +9,10 @@
 - Recursive directory traversal for in-depth counting.
 - Simple command-line interface, easy to integrate into scripts or workflows.
 
+## Screenshot
+
+![Cupid-LC Example](images/cupid-lc-example.png)
+
 ## Example Usage
 
 To use `cupid-lc`, simply pass a file or directory as an argument.
