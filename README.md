@@ -46,6 +46,8 @@ cd cupid-lc
 gcc src/main.c -o cupid-lc
 ```
 
+When you're done building, I suggest moving the executable to the `/usr/bin/` directory for system-wide use in the terminal.
+
 Replace `username` with your GitHub username.
 
 ## Usage
