@@ -1,5 +1,3 @@
----
-
 # Cupid-LC
 
 **cupid-lc** is a line count utility written in C for Unix and Linux systems. It calculates the total number of lines across files in a given directory or for a single file. The output includes both a cumulative total and individual line counts for each file processed. 
