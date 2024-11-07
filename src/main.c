@@ -8,6 +8,10 @@
 #include <string.h>
 #include <sys/stat.h>
 
+/** Function to count the number of lines in a file
+ * @param filepath The path to the file
+ * @param total The total number of lines in all files
+ */
 void count_lines_in_file(const char *filepath, long *total) {
     FILE *file = fopen(filepath, "r");
     if (!file) {
@@ -25,7 +29,10 @@ void count_lines_in_file(const char *filepath, long *total) {
     *total += line_count;
     printf("cupid-lc: line count per %s: %ld\n", filepath, line_count);
 }
-
+/** Function to count the number of lines in a directory
+ * @param dirpath The path to the directory
+ * @param total The total number of lines in all files
+ */
 void count_lines_in_dir(const char *dirpath, long *total) {
     DIR *dir = opendir(dirpath);
     if (!dir) {
@@ -55,7 +62,11 @@ void count_lines_in_dir(const char *dirpath, long *total) {
     }
     closedir(dir);
 }
-
+/** Main function
+ * @param argc The number of command-line arguments
+ * @param argv The command-line arguments
+ * @return The exit status of the program
+ */
 int main(int argc, char *argv[]) {
     if (argc != 2) {
         fprintf(stderr, "Usage: %s [dir]\n", argv[0]);
