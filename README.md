@@ -11,7 +11,7 @@
 
 ## Screenshot
 
-![Cupid-LC Example](images/cupid-lc-example.png)
+![Cupid-LC Example](images/screenshot.png)
 
 ## Example Usage
 
